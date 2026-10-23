@@ -1,0 +1,24 @@
+services:
+  candles-db:
+  # Candle store for the live trader.
+  # If you can pull timescale/timescaledb from Docker Hub, switch the image to
+  # it for automatic chunk partitioning/retention; the code also works with
+  # plain postgres (primary-key table, same queries).
+    image: postgres:16-alpine
+    container_name: tradingbot-candles-db
+    environment:
+      POSTGRES_USER: trader
+      POSTGRES_PASSWORD: trader
+      POSTGRES_DB: tradingbot
+    ports:
+      - "5434:5432"
+    volumes:
+      - candles_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trader -d tradingbot"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  candles_pgdata:

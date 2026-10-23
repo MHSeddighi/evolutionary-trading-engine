@@ -1,0 +1,59 @@
+{
+ "direction": "long",
+ "source": "strategy_01_20261023_181606.json",
+ "selection_score": 1.7713,
+ "train": {
+  "pnl": 25.1524343270692,
+  "dd": 1.6396611000482255,
+  "trades": 874,
+  "wr": 67.7345537757437,
+  "pf": 4.6851064046174775
+ },
+ "test": {
+  "pnl": 5.841820703225679,
+  "dd": 4.00306343839846,
+  "trades": 908,
+  "wr": 53.85462555066079,
+  "pf": 1.4732215068858088
+ },
+ "rules": [
+  {
+   "rule_id": 1,
+   "name": "r1_return_autocorr_48+return_skew_288",
+   "conditions": [
+    "[return_autocorr_48] IS High",
+    "[return_skew_288] IS High",
+    "[ema_dist_atr_288] IS Very High",
+    "[h_cumret_7d] IS High",
+    "[h_momz_30d] IS Low"
+   ],
+   "tp": 7.0,
+   "sl": 2.3,
+   "capital_pct": 1.4
+  },
+  {
+   "rule_id": 2,
+   "name": "r2_sign_flip_rate_48+symbol_relative_return_288",
+   "conditions": [
+    "[sign_flip_rate_48] IS High",
+    "[symbol_relative_return_288] IS High",
+    "[symbol_btc_corr_288] IS High"
+   ],
+   "tp": 7.0,
+   "sl": 2.3,
+   "capital_pct": 1.6
+  },
+  {
+   "rule_id": 3,
+   "name": "r3_h_dd_7d+h_cumret_30d",
+   "conditions": [
+    "[h_dd_7d] IS Low",
+    "[h_cumret_30d] IS High",
+    "[symbol_btc_corr_288] IS High"
+   ],
+   "tp": 5.0,
+   "sl": 2.3,
+   "capital_pct": 3.0
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "index": 4,
+  "direction": "short",
+  "rank": 5,
+  "pop_idx": 60,
+  "timestamp": "20261023_123138",
+  "train": {
+    "pnl": 21.40788064358057,
+    "dd": 1.7436904346245083,
+    "trades": 1155,
+    "wr": 65.28138528138528,
+    "pf": 3.233569339249926
+  },
+  "test": {
+    "pnl": 2.9306406479561673,
+    "dd": 2.0869619535483532,
+    "trades": 256,
+    "wr": 65.234375,
+    "pf": 1.9458454564970185
+  },
+  "strategy": {
+    "direction": "short",
+    "rules_set": [
+      {
+        "rule_id": 552,
+        "conditions": [
+          "[volatility_regime_percentile_288] IS Medium",
+          "[adx_14] IS High",
+          "[macro_efficiency_720] IS Very High",
+          "[btc_volatility_ratio_48_288] IS Medium"
+        ],
+        "tp": 4.5,
+        "sl": 1.7,
+        "capital_pct": 1.0
+      },
+      {
+        "rule_id": 697,
+        "conditions": [
+          "[ema_gap_atr_144_288] IS Medium",
+          "[return_autocorr_288] IS Very High",
+          "[return_kurtosis_288] IS Low"
+        ],
+        "tp": 3.0,
+        "sl": 2.3,
+        "capital_pct": 2.8
+      }
+    ]
+  }
+}

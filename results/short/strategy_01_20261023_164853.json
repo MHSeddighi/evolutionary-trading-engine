@@ -1,0 +1,112 @@
+{
+  "index": 0,
+  "direction": "short",
+  "rank": 1,
+  "pop_idx": 34,
+  "timestamp": "20261023_164853",
+  "train": {
+    "pnl": 46.2999584494508,
+    "dd": 2.312853535413581,
+    "trades": 1904,
+    "wr": 68.4873949579832,
+    "pf": 3.08805782732213
+  },
+  "test": {
+    "pnl": -0.10553100294200135,
+    "dd": 7.188150516931434,
+    "trades": 1068,
+    "wr": 41.57303370786517,
+    "pf": 0.9925815807238672
+  },
+  "strategy": {
+    "direction": "short",
+    "rules_set": [
+      {
+        "rule_id": 4,
+        "conditions": [
+          "[realized_vol_288] IS High",
+          "[macro_channel_pos_1440] IS Medium",
+          "[macro_volatility_ratio_288_1440] IS High",
+          "[btc_realized_vol_288] IS High"
+        ],
+        "tp": 7.0,
+        "sl": 2.0,
+        "capital_pct": 1.0
+      },
+      {
+        "rule_id": 198,
+        "conditions": [
+          "[macro_channel_pos_1440] IS Medium",
+          "[macro_volatility_ratio_288_1440] IS High",
+          "[h_momz_30d] IS Low",
+          "[symbol_relative_return_288] IS High"
+        ],
+        "tp": 6.0,
+        "sl": 2.0,
+        "capital_pct": 1.8
+      },
+      {
+        "rule_id": 1197,
+        "conditions": [
+          "[ema_gap_atr_12_48] IS Very High",
+          "[close_location_mean_12] IS Low",
+          "[return_skew_288] IS Low",
+          "[macro_channel_pos_1440] IS High",
+          "[h_momz_24h] IS High"
+        ],
+        "tp": 2.0,
+        "sl": 1.0,
+        "capital_pct": 2.6
+      },
+      {
+        "rule_id": 2076,
+        "conditions": [
+          "[realized_vol_288] IS Low",
+          "[h_momz_30d] IS Low",
+          "[symbol_btc_corr_288] IS Low"
+        ],
+        "tp": 2.5,
+        "sl": 1.7,
+        "capital_pct": 3.0
+      },
+      {
+        "rule_id": 2150,
+        "conditions": [
+          "[realized_vol_288] IS Low",
+          "[return_skew_288] IS High",
+          "[h_momz_30d] IS High",
+          "[btc_realized_vol_288] IS Low"
+        ],
+        "tp": 3.0,
+        "sl": 1.5,
+        "capital_pct": 3.0
+      },
+      {
+        "rule_id": 2187,
+        "conditions": [
+          "[close_location_mean_12] IS Low",
+          "[return_skew_288] IS Low",
+          "[obv_zscore_288] IS Low",
+          "[h_momz_30d] IS Low",
+          "[symbol_btc_corr_288] IS Low"
+        ],
+        "tp": 4.5,
+        "sl": 1.8,
+        "capital_pct": 3.0
+      },
+      {
+        "rule_id": 5275,
+        "conditions": [
+          "[volume_price_divergence_48] IS Low",
+          "[macro_range_pct_rank_1440] IS High",
+          "[h_momz_24h] IS High",
+          "[h_dd_7d] IS Low",
+          "[btc_volatility_ratio_48_288] IS High"
+        ],
+        "tp": 2.5,
+        "sl": 0.7,
+        "capital_pct": 2.4
+      }
+    ]
+  }
+}

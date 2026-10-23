@@ -1,0 +1,19 @@
+[Unit]
+Description=trading-bot phase 2 (Wallex 24/7 trader)
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/opt/trading-bot
+ExecStart=/opt/trading-bot/deploy/start_trader.sh
+Restart=always
+RestartSec=10
+EnvironmentFile=-/etc/tradingbot.env
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

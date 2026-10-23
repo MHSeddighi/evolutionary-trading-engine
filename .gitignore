@@ -1,0 +1,49 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+
+# ===== testing / tooling caches =====
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ===== IDE / OS =====
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# ===== secrets =====
+.env
+*.key
+
+# ===== data artifacts (regenerable / too large for git) =====
+dataset/candles/
+dataset/candles_live/
+dataset/features/*.csv
+dataset/features/*.parquet
+dataset/features/*.pkl
+
+# ===== experiment artifacts =====
+results/logs/
+results/cache/
+results/models/
+results/state/
+results/pool/*.csv
+*.pkl
+
+# ===== notebooks outputs =====
+.ipynb_checkpoints/
+
+# keep small deployment artifacts (rulesets, manifests, selection audits,
+# shadow stats) in git — they are the auditable deliverables

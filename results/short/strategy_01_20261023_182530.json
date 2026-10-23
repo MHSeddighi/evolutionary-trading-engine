@@ -1,0 +1,99 @@
+{
+  "index": 0,
+  "direction": "short",
+  "rank": 1,
+  "pop_idx": 66,
+  "timestamp": "20261023_182530",
+  "train": {
+    "pnl": 69.03054532278475,
+    "dd": 3.3519934154081854,
+    "trades": 2297,
+    "wr": 69.39486286460601,
+    "pf": 4.454142125212081
+  },
+  "test": {
+    "pnl": -0.858991578631688,
+    "dd": 6.805877117384807,
+    "trades": 1358,
+    "wr": 42.12076583210604,
+    "pf": 0.9585315144605007
+  },
+  "strategy": {
+    "direction": "short",
+    "rules_set": [
+      {
+        "rule_id": 1798,
+        "conditions": [
+          "[macro_channel_pos_1440] IS High",
+          "[macro_volatility_ratio_288_1440] IS Low",
+          "[h_cumret_7d] IS High",
+          "[h_dd_30d] IS High"
+        ],
+        "tp": 4.5,
+        "sl": 2.3,
+        "capital_pct": 1.4
+      },
+      {
+        "rule_id": 1915,
+        "conditions": [
+          "[obv_zscore_288] IS Low",
+          "[macro_volatility_ratio_288_1440] IS High",
+          "[h_momz_24h] IS Low",
+          "[btc_realized_vol_288] IS High"
+        ],
+        "tp": 7.0,
+        "sl": 2.3,
+        "capital_pct": 1.0
+      },
+      {
+        "rule_id": 2997,
+        "conditions": [
+          "[logret_12] IS Medium",
+          "[drawdown_from_peak_288] IS Low",
+          "[distance_from_rolling_low_288] IS Low",
+          "[macro_channel_pos_1440] IS High",
+          "[btc_logret_288] IS Low"
+        ],
+        "tp": 3.0,
+        "sl": 2.0,
+        "capital_pct": 2.4
+      },
+      {
+        "rule_id": 3972,
+        "conditions": [
+          "[atr_pct_14] IS Medium",
+          "[realized_vol_288] IS High",
+          "[distance_from_rolling_low_288] IS Low",
+          "[h_dd_30d] IS Low"
+        ],
+        "tp": 5.5,
+        "sl": 1.8,
+        "capital_pct": 2.4
+      },
+      {
+        "rule_id": 4667,
+        "conditions": [
+          "[realized_vol_288] IS Low",
+          "[return_skew_288] IS High",
+          "[h_momz_30d] IS High",
+          "[btc_realized_vol_288] IS Low"
+        ],
+        "tp": 3.5,
+        "sl": 1.5,
+        "capital_pct": 2.8
+      },
+      {
+        "rule_id": 5686,
+        "conditions": [
+          "[realized_vol_48] IS High",
+          "[obv_zscore_288] IS Medium",
+          "[h_momz_30d] IS Low",
+          "[btc_logret_12] IS Medium"
+        ],
+        "tp": 6.0,
+        "sl": 1.7,
+        "capital_pct": 2.6
+      }
+    ]
+  }
+}

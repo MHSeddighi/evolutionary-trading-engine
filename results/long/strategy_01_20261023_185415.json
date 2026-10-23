@@ -1,0 +1,75 @@
+{
+  "index": 0,
+  "direction": "long",
+  "rank": 1,
+  "pop_idx": 355,
+  "timestamp": "20261023_185415",
+  "train": {
+    "pnl": 34.75912034223728,
+    "dd": 2.344136460897949,
+    "trades": 1162,
+    "wr": 72.03098106712564,
+    "pf": 4.6701020090966745
+  },
+  "test": {
+    "pnl": 2.490242211753497,
+    "dd": 7.682711281888704,
+    "trades": 735,
+    "wr": 35.91836734693877,
+    "pf": 1.168890689441408
+  },
+  "strategy": {
+    "direction": "long",
+    "rules_set": [
+      {
+        "rule_id": 76,
+        "conditions": [
+          "[bollinger_width_20] IS High",
+          "[drawdown_from_peak_288] IS High",
+          "[macro_efficiency_720] IS High",
+          "[btc_realized_vol_288] IS High"
+        ],
+        "tp": 6.0,
+        "sl": 1.7,
+        "capital_pct": 2.2
+      },
+      {
+        "rule_id": 166,
+        "conditions": [
+          "[return_skew_288] IS High",
+          "[ema_dist_atr_288] IS Very High",
+          "[h_cumret_7d] IS High",
+          "[h_momz_30d] IS Low"
+        ],
+        "tp": 7.0,
+        "sl": 2.3,
+        "capital_pct": 1.4
+      },
+      {
+        "rule_id": 657,
+        "conditions": [
+          "[return_autocorr_48] IS High",
+          "[return_skew_288] IS High",
+          "[ema_dist_atr_288] IS Very High",
+          "[h_cumret_7d] IS High",
+          "[h_momz_30d] IS Low"
+        ],
+        "tp": 5.0,
+        "sl": 2.0,
+        "capital_pct": 1.6
+      },
+      {
+        "rule_id": 1049,
+        "conditions": [
+          "[realized_vol_48] IS High",
+          "[macro_channel_pos_1440] IS Very High",
+          "[macro_volatility_ratio_288_1440] IS Low",
+          "[btc_realized_vol_288] IS High"
+        ],
+        "tp": 5.5,
+        "sl": 2.3,
+        "capital_pct": 1.2
+      }
+    ]
+  }
+}

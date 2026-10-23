@@ -1,0 +1,66 @@
+{
+  "index": 0,
+  "direction": "short",
+  "rank": 1,
+  "pop_idx": 154,
+  "timestamp": "20261023_150641",
+  "train": {
+    "pnl": 19.937235634657554,
+    "dd": 0.8742084579752232,
+    "trades": 316,
+    "wr": 69.30379746835443,
+    "pf": 6.139392374082982
+  },
+  "test": {
+    "pnl": -0.8083435561507883,
+    "dd": 2.379376362474045,
+    "trades": 119,
+    "wr": 23.52941176470588,
+    "pf": 0.7548030077712201
+  },
+  "strategy": {
+    "direction": "short",
+    "rules_set": [
+      {
+        "rule_id": 2105,
+        "conditions": [
+          "[ema_gap_atr_144_288] IS Low",
+          "[micro_rsi_3] IS High",
+          "[h_momz_7d] IS Low",
+          "[h_momz_30d] IS Low",
+          "[symbol_relative_return_288] IS High"
+        ],
+        "tp": 6.0,
+        "sl": 1.7,
+        "capital_pct": 2.6
+      },
+      {
+        "rule_id": 2292,
+        "conditions": [
+          "[atr_pct_14] IS Very High",
+          "[volume_ratio_12_48] IS Low",
+          "[sign_flip_rate_48] IS Low",
+          "[ema_dist_atr_288] IS Low",
+          "[macro_range_pct_rank_1440] IS Low",
+          "[macro_volatility_ratio_288_1440] IS High"
+        ],
+        "tp": 6.5,
+        "sl": 1.4,
+        "capital_pct": 2.2
+      },
+      {
+        "rule_id": 3369,
+        "conditions": [
+          "[signed_volume_imbalance_48] IS High",
+          "[return_skew_288] IS Low",
+          "[adx_14] IS High",
+          "[h_dd_7d] IS High",
+          "[symbol_relative_return_288] IS Low"
+        ],
+        "tp": 4.5,
+        "sl": 2.0,
+        "capital_pct": 2.4
+      }
+    ]
+  }
+}

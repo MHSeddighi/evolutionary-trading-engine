@@ -1,0 +1,75 @@
+{
+ "direction": "short",
+ "source": "strategy_01_20261023_145458.json",
+ "selection_score": 2.4314,
+ "train": {
+  "pnl": 20.999208432086746,
+  "dd": 0.5838000071448819,
+  "trades": 540,
+  "wr": 80.37037037037037,
+  "pf": 7.576663290581151
+ },
+ "test": {
+  "pnl": 2.4779909066390218,
+  "dd": 1.280002578256239,
+  "trades": 268,
+  "wr": 53.35820895522389,
+  "pf": 1.6316520530637992
+ },
+ "rules": [
+  {
+   "rule_id": 1,
+   "name": "r1_ema_gap_atr_12_48+ema_gap_atr_144_288",
+   "conditions": [
+    "[ema_gap_atr_12_48] IS Low",
+    "[ema_gap_atr_144_288] IS High",
+    "[h_dd_30d] IS Low",
+    "[btc_realized_vol_288] IS High"
+   ],
+   "tp": 2.0,
+   "sl": 1.0,
+   "capital_pct": 3.0
+  },
+  {
+   "rule_id": 2,
+   "name": "r2_macro_volatility_ratio_288_1440+h_cumret_7d",
+   "conditions": [
+    "[macro_volatility_ratio_288_1440] IS High",
+    "[h_cumret_7d] IS High",
+    "[h_cumret_30d] IS Low",
+    "[h_range_pos_30d] IS High"
+   ],
+   "tp": 5.0,
+   "sl": 2.3,
+   "capital_pct": 3.0
+  },
+  {
+   "rule_id": 3,
+   "name": "r3_close_location_mean_12+return_skew_288",
+   "conditions": [
+    "[close_location_mean_12] IS Low",
+    "[return_skew_288] IS Low",
+    "[obv_zscore_288] IS Low",
+    "[h_momz_30d] IS Low",
+    "[symbol_btc_corr_288] IS Low"
+   ],
+   "tp": 5.0,
+   "sl": 1.5,
+   "capital_pct": 2.4
+  },
+  {
+   "rule_id": 4,
+   "name": "r4_logret_12+drawdown_from_peak_288",
+   "conditions": [
+    "[logret_12] IS Medium",
+    "[drawdown_from_peak_288] IS Low",
+    "[distance_from_rolling_low_288] IS Low",
+    "[macro_channel_pos_1440] IS High",
+    "[btc_logret_288] IS Low"
+   ],
+   "tp": 5.0,
+   "sl": 2.3,
+   "capital_pct": 2.4
+  }
+ ]
+}

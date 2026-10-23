@@ -1,0 +1,172 @@
+{
+ "direction": "long",
+ "selected": "strategy_01_20261023_181606.json",
+ "score": 1.7713,
+ "gates": {
+  "min_trades": 150,
+  "min_pf": 1.1,
+  "max_dd": 12.0
+ },
+ "ranking": [
+  {
+   "path": "strategy_01_20261023_181606.json",
+   "score": 1.7713,
+   "test_pnl": 5.841820703225679,
+   "test_pf": 1.4732215068858088,
+   "test_wr": 53.85462555066079,
+   "test_dd": 4.00306343839846,
+   "test_trades": 908,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_182537.json",
+   "score": 1.6531,
+   "test_pnl": 8.231789447274053,
+   "test_pf": 1.644528901784949,
+   "test_wr": 44.78178368121442,
+   "test_dd": 6.3858159287977685,
+   "test_trades": 527,
+   "reasons": []
+  },
+  {
+   "path": "strategy_03_20261023_182549.json",
+   "score": 1.3882,
+   "test_pnl": 7.234103755676188,
+   "test_pf": 1.5700720433250699,
+   "test_wr": 40.974729241877256,
+   "test_dd": 6.529583816787787,
+   "test_trades": 554,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_182549.json",
+   "score": 1.3316,
+   "test_pnl": 8.116802816771084,
+   "test_pf": 1.3215775108691954,
+   "test_wr": 43.95688991531947,
+   "test_dd": 7.007191568120447,
+   "test_trades": 1299,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_185433.json",
+   "score": 0.5996,
+   "test_pnl": 2.3804776962701055,
+   "test_pf": 1.214820398275407,
+   "test_wr": 45.095168374816986,
+   "test_dd": 4.375575257692115,
+   "test_trades": 683,
+   "reasons": []
+  },
+  {
+   "path": "strategy_03_20261023_185433.json",
+   "score": 0.4341,
+   "test_pnl": 1.978825842516386,
+   "test_pf": 1.1632686794817133,
+   "test_wr": 42.64900662251655,
+   "test_dd": 4.91686301074777,
+   "test_trades": 755,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_164756.json",
+   "score": 0.3892,
+   "test_pnl": 1.7335681446311355,
+   "test_pf": 1.1609694079789603,
+   "test_wr": 43.32688588007737,
+   "test_dd": 4.799598168904471,
+   "test_trades": 517,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_185415.json",
+   "score": 0.3504,
+   "test_pnl": 2.490242211753497,
+   "test_pf": 1.168890689441408,
+   "test_wr": 35.91836734693877,
+   "test_dd": 7.682711281888704,
+   "test_trades": 735,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_164756.json",
+   "score": 0.2712,
+   "test_pnl": 1.1283097164596256,
+   "test_pf": 1.1009546388599458,
+   "test_wr": 42.87749287749288,
+   "test_dd": 4.365768853650815,
+   "test_trades": 702,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_183807.json",
+   "score": 0.2328,
+   "test_pnl": 0.9487218627706113,
+   "test_pf": 1.1010931436924236,
+   "test_wr": 44.130434782608695,
+   "test_dd": 4.276106208811288,
+   "test_trades": 460,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261022_203905.json",
+   "score": null,
+   "test_pnl": 2.7547792445460857,
+   "test_pf": 1.2623162503628083,
+   "test_wr": 36.01815087918321,
+   "test_dd": 2.176270634592247,
+   "test_trades": 1763,
+   "reasons": [
+    "features not computable live: ['atr_pct_288', 'bollinger_percent_b_20', 'return_autocorr_288', 'signed_volume_imbalance_288', 'upside_vol_ratio_48_288']"
+   ]
+  },
+  {
+   "path": "strategy_01_20261023_183751.json",
+   "score": null,
+   "test_pnl": 1.0494508472853283,
+   "test_pf": 1.0480894334856354,
+   "test_wr": 34.94461228600201,
+   "test_dd": 5.498201169317138,
+   "test_trades": 993,
+   "reasons": [
+    "test pf < 1.1"
+   ]
+  },
+  {
+   "path": "strategy_02_20261022_203905.json",
+   "score": null,
+   "test_pnl": 2.1184043501765757,
+   "test_pf": 1.2056689539586949,
+   "test_wr": 33.57912648893931,
+   "test_dd": 2.139609511556733,
+   "test_trades": 1763,
+   "reasons": [
+    "features not computable live: ['atr_pct_288', 'bollinger_percent_b_20', 'return_autocorr_288', 'signed_volume_imbalance_288', 'upside_vol_ratio_48_288']"
+   ]
+  },
+  {
+   "path": "strategy_03_20261022_203905.json",
+   "score": null,
+   "test_pnl": 1.981821967815634,
+   "test_pf": 1.1925818507312638,
+   "test_wr": 33.57912648893931,
+   "test_dd": 2.173761145645201,
+   "test_trades": 1763,
+   "reasons": [
+    "features not computable live: ['atr_pct_288', 'bollinger_percent_b_20', 'return_autocorr_288', 'signed_volume_imbalance_288', 'upside_vol_ratio_48_288']"
+   ]
+  },
+  {
+   "path": "strategy_03_20261023_164756.json",
+   "score": null,
+   "test_pnl": 0.848453255160706,
+   "test_pf": 1.0914801084349832,
+   "test_wr": 43.855421686746986,
+   "test_dd": 4.082361508091928,
+   "test_trades": 415,
+   "reasons": [
+    "test pf < 1.1"
+   ]
+  }
+ ]
+}

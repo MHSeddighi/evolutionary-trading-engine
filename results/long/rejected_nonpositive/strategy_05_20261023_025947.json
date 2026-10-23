@@ -1,0 +1,88 @@
+{
+  "index": 4,
+  "direction": "long",
+  "rank": 5,
+  "pop_idx": 11,
+  "timestamp": "20261023_025947",
+  "train": {
+    "pnl": 6.369537325030976,
+    "dd": 4.346995314555453,
+    "trades": 3578,
+    "wr": 51.28563443264393,
+    "pf": 1.1866641810535234
+  },
+  "test": {
+    "pnl": -3.353824806265763,
+    "dd": 5.114668219351957,
+    "trades": 1150,
+    "wr": 36.869565217391305,
+    "pf": 0.7331612166013697
+  },
+  "strategy": {
+    "direction": "long",
+    "rules_set": [
+      {
+        "rule_id": 390,
+        "conditions": [
+          "[bollinger_percent_b_20] IS Medium",
+          "[return_autocorr_288] IS Medium",
+          "[minus_di_14] IS Medium",
+          "[macro_channel_pos_1440] IS Low"
+        ],
+        "tp": 2.5,
+        "sl": 1.1,
+        "capital_pct": 1.0
+      },
+      {
+        "rule_id": 437,
+        "conditions": [
+          "[atr_ratio_14_288] IS Medium",
+          "[volatility_regime_percentile_288] IS High",
+          "[signed_volume_imbalance_48] IS Medium",
+          "[volume_price_divergence_48] IS Medium"
+        ],
+        "tp": 6.0,
+        "sl": 2.0,
+        "capital_pct": 1.4
+      },
+      {
+        "rule_id": 792,
+        "conditions": [
+          "[logret_144] IS Very High",
+          "[trend_efficiency_48] IS Very High",
+          "[realized_vol_576] IS High",
+          "[volume_ratio_48_288] IS Very High",
+          "[return_kurtosis_288] IS Very High"
+        ],
+        "tp": 4.5,
+        "sl": 2.3,
+        "capital_pct": 1.0
+      },
+      {
+        "rule_id": 891,
+        "conditions": [
+          "[trend_efficiency_288] IS Low",
+          "[realized_vol_48] IS Very High",
+          "[downside_vol_ratio_48_288] IS Very High",
+          "[btc_volatility_ratio_48_288] IS Very High",
+          "[symbol_relative_return_288] IS High"
+        ],
+        "tp": 2.0,
+        "sl": 1.7,
+        "capital_pct": 1.0
+      },
+      {
+        "rule_id": 1007,
+        "conditions": [
+          "[channel_pos_48] IS Medium",
+          "[atr_pct_288] IS High",
+          "[plus_di_14] IS High",
+          "[macro_volatility_ratio_288_1440] IS High"
+        ],
+        "tp": 4.0,
+        "sl": 1.2,
+        "capital_pct": 1.2
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+pandas>=2.2
+numpy>=1.26
+numba>=0.60
+psycopg[binary]>=3.1
+pyarrow>=16
+scikit-learn>=1.4
+requests>=2.31

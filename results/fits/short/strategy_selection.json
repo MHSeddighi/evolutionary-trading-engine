@@ -1,0 +1,172 @@
+{
+ "direction": "short",
+ "selected": "strategy_01_20261023_145458.json",
+ "score": 2.4314,
+ "gates": {
+  "min_trades": 150,
+  "min_pf": 1.1,
+  "max_dd": 12.0
+ },
+ "ranking": [
+  {
+   "path": "strategy_01_20261023_145458.json",
+   "score": 2.4314,
+   "test_pnl": 2.4779909066390218,
+   "test_pf": 1.6316520530637992,
+   "test_wr": 53.35820895522389,
+   "test_dd": 1.280002578256239,
+   "test_trades": 268,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_145459.json",
+   "score": 2.3225,
+   "test_pnl": 1.9359032148961006,
+   "test_pf": 1.5000196999850588,
+   "test_wr": 48.734177215189874,
+   "test_dd": 1.0208746888591638,
+   "test_trades": 316,
+   "reasons": []
+  },
+  {
+   "path": "strategy_03_20261023_145459.json",
+   "score": 2.2187,
+   "test_pnl": 1.3841214148793313,
+   "test_pf": 1.4318243600379421,
+   "test_wr": 43.84057971014493,
+   "test_dd": 0.737200565681745,
+   "test_trades": 276,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_141910.json",
+   "score": 2.1968,
+   "test_pnl": 2.5881058402592316,
+   "test_pf": 1.4243056559112748,
+   "test_wr": 52.131147540983605,
+   "test_dd": 1.4060516193362345,
+   "test_trades": 305,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_144324.json",
+   "score": 1.1109,
+   "test_pnl": 2.6271431965753465,
+   "test_pf": 1.3634081082484155,
+   "test_wr": 44.58874458874459,
+   "test_dd": 2.655095715241761,
+   "test_trades": 231,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_144324.json",
+   "score": 1.0692,
+   "test_pnl": 2.541853124648327,
+   "test_pf": 1.3701104225080187,
+   "test_wr": 42.71844660194174,
+   "test_dd": 2.630148489569797,
+   "test_trades": 206,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_185348.json",
+   "score": 1.0398,
+   "test_pnl": 3.8799106283462663,
+   "test_pf": 1.2272942373181375,
+   "test_wr": 52.243346007604565,
+   "test_dd": 4.133846111525782,
+   "test_trades": 1315,
+   "reasons": []
+  },
+  {
+   "path": "strategy_03_20261023_144324.json",
+   "score": 1.0255,
+   "test_pnl": 2.5352019865065785,
+   "test_pf": 1.313976372765591,
+   "test_wr": 45.17133956386293,
+   "test_dd": 2.8339239141943016,
+   "test_trades": 321,
+   "reasons": []
+  },
+  {
+   "path": "strategy_02_20261023_185407.json",
+   "score": 0.7386,
+   "test_pnl": 2.3639343656745098,
+   "test_pf": 1.1589633662440626,
+   "test_wr": 54.509803921568626,
+   "test_dd": 3.445719415586791,
+   "test_trades": 1275,
+   "reasons": []
+  },
+  {
+   "path": "strategy_03_20261023_185407.json",
+   "score": 0.6366,
+   "test_pnl": 1.7849379540071766,
+   "test_pf": 1.1456855876379048,
+   "test_wr": 43.9918533604888,
+   "test_dd": 3.0009698644280434,
+   "test_trades": 491,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_155227.json",
+   "score": 0.3775,
+   "test_pnl": 2.461328808619868,
+   "test_pf": 1.1092733851764185,
+   "test_wr": 39.81117230527144,
+   "test_dd": 6.866414530947805,
+   "test_trades": 1271,
+   "reasons": []
+  },
+  {
+   "path": "strategy_01_20261023_021243.json",
+   "score": null,
+   "test_pnl": 0.1148971323447796,
+   "test_pf": 1.0255002239016693,
+   "test_wr": 41.714285714285715,
+   "test_dd": 1.9396046463790937,
+   "test_trades": 525,
+   "reasons": [
+    "features not computable live: ['return_kurtosis_288', 'stochastic_k_14', 'upside_vol_ratio_48_288']",
+    "test pf < 1.1"
+   ]
+  },
+  {
+   "path": "strategy_01_20261023_022319.json",
+   "score": null,
+   "test_pnl": 7.562139876210125,
+   "test_pf": 1.4923065310769048,
+   "test_wr": 49.01960784313725,
+   "test_dd": 5.646711344247109,
+   "test_trades": 510,
+   "reasons": [
+    "features not computable live: ['atr_pct_288', 'channel_pos_288', 'return_autocorr_288']"
+   ]
+  },
+  {
+   "path": "strategy_01_20261023_120050.json",
+   "score": null,
+   "test_pnl": 0.9100898621894942,
+   "test_pf": 1.0996951845980882,
+   "test_wr": 50.631844987363095,
+   "test_dd": 3.168491483543198,
+   "test_trades": 1187,
+   "reasons": [
+    "features not computable live: ['return_autocorr_288']",
+    "test pf < 1.1"
+   ]
+  },
+  {
+   "path": "strategy_01_20261023_123138.json",
+   "score": null,
+   "test_pnl": 3.268208480323665,
+   "test_pf": 1.6991094749340299,
+   "test_wr": 60.879629629629626,
+   "test_dd": 1.951436674390197,
+   "test_trades": 432,
+   "reasons": [
+    "features not computable live: ['return_autocorr_288', 'return_kurtosis_288']"
+   ]
+  }
+ ]
+}

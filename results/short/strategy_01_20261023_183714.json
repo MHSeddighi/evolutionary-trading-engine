@@ -1,0 +1,86 @@
+{
+  "index": 0,
+  "direction": "short",
+  "rank": 1,
+  "pop_idx": 89,
+  "timestamp": "20261023_183714",
+  "train": {
+    "pnl": 71.24960697580974,
+    "dd": 3.471138962064769,
+    "trades": 1589,
+    "wr": 67.21208307111391,
+    "pf": 3.214907240880894
+  },
+  "test": {
+    "pnl": 0.756432715331897,
+    "dd": 6.555389370094053,
+    "trades": 796,
+    "wr": 44.597989949748744,
+    "pf": 1.0395279209030792
+  },
+  "strategy": {
+    "direction": "short",
+    "rules_set": [
+      {
+        "rule_id": 1503,
+        "conditions": [
+          "[atr_pct_14] IS Medium",
+          "[range_compression_flag] IS Active (1)",
+          "[macro_volatility_ratio_288_1440] IS High",
+          "[h_dd_7d] IS Low",
+          "[btc_realized_vol_288] IS High"
+        ],
+        "tp": 4.0,
+        "sl": 2.3,
+        "capital_pct": 3.0
+      },
+      {
+        "rule_id": 2159,
+        "conditions": [
+          "[macro_channel_pos_1440] IS High",
+          "[macro_volatility_ratio_288_1440] IS Low",
+          "[h_cumret_7d] IS High",
+          "[h_dd_30d] IS High"
+        ],
+        "tp": 4.0,
+        "sl": 2.3,
+        "capital_pct": 2.4
+      },
+      {
+        "rule_id": 2607,
+        "conditions": [
+          "[realized_vol_48] IS High",
+          "[ema_dist_atr_288] IS Low",
+          "[macro_efficiency_720] IS High",
+          "[macro_channel_pos_1440] IS Low"
+        ],
+        "tp": 6.0,
+        "sl": 2.3,
+        "capital_pct": 2.6
+      },
+      {
+        "rule_id": 4123,
+        "conditions": [
+          "[macro_volatility_ratio_288_1440] IS High",
+          "[h_cumret_7d] IS High",
+          "[h_cumret_30d] IS Low",
+          "[h_range_pos_30d] IS High"
+        ],
+        "tp": 5.0,
+        "sl": 2.0,
+        "capital_pct": 2.6
+      },
+      {
+        "rule_id": 4864,
+        "conditions": [
+          "[ema_gap_atr_144_288] IS Medium",
+          "[h_range_pos_30d] IS Low",
+          "[symbol_relative_return_288] IS High"
+        ],
+        "tp": 6.0,
+        "sl": 2.3,
+        "capital_pct": 3.0
+      }
+    ]
+  }
+}
